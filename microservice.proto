@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+option go_package = "grpc/ms/pb";
+
+service PaymentService {
+    rpc PayTo(PaymentServiceRequest) returns (PaymentServiceReply) {}
+}
+
+message PaymentServiceRequest {
+    string id = 1;
+}
+
+message PaymentServiceReply {
+    string message = 1;
+}
