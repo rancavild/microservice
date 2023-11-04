@@ -3,7 +3,7 @@
 The main idea behind RPC (Remote Procedure Call) is to allow that clients can directly call methods on a server application on a different machine,
 making it easier to create distributed applications and microservices. 
 
-gRPC is an Open Source framework high performance Remote Procedure Call (RPC) implemented by Google. 
+gRPC is an Open Source high performance Remote Procedure Call (RPC) framework implemented by Google. 
 
 A service has methods that can be called remotely by clients, passing parameters and getting a response.
 
