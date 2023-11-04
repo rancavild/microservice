@@ -29,6 +29,8 @@ func main() {
 	s := grpc.NewServer()
 	pb.RegisterPaymentServiceServer(s, &server{})
 
+	log.Println("Service running")
+
 	if err := s.Serve(listener); err != nil {
 		log.Fatalf("Failed to serve : %v", err)
 	}
